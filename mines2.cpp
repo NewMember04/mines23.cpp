@@ -37,7 +37,7 @@ switch (m2){
     case 12: j = 334 +d2; break;
     default : cout <<"There are only 12 months! \n";
 }
-if (m1 > 12 || m2 > 12) { return 0;}    
+if (m1 > 12 || m2 > 12  || m1 < 0 || m2 <0) { return 0;}    
 
 if  ( disekt(y2) == true && m2 > 2) { j = j +1;}
 if ( disekt(y1) == true && m1>2 ) { j = j -1;}
