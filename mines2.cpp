@@ -93,6 +93,16 @@ if (y1 == y2 && m1<m2 && d1< 32 && d2 < 32 && d1 > 0 && d2  > 0) {
  }
  }
 else if (y1 < y2 && d1< 32 && d2 < 32 && d1 > 0 && d2  > 0){
+    for (int i = y1 +1 ; i < y2 -1; i++){
+    if ( disekt(i) == true && y2 -y1 > 1){
+        j = j+ 1;
+    }
+    else if ( y2-y1 ==1 ) {
+        cout <<"No  year in between";
+    }
+     else    {cout <<" ";}
+    }
+  cout << "\n";
  switch(m1) {
     case 1: cout << abs(j -d1 +(y2 - y1)*365) <<" days remaining until "<< d2 <<" "<< m2 <<" "<< y2 ; break;
     case 2: cout << abs(j -d1 -31 +(y2 - y1)*365) <<" days remaining until "<< d2 <<" "<< m2 <<" "<< y2 ; break;
