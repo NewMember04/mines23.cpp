@@ -40,7 +40,7 @@ switch (m2){
 if (m1 > 12 || m2 > 12  || m1 < 0 || m2 <0) { return 0;}    
 
 if  ( disekt(y2) == true && m2 > 2) { j = j +1;}
-if ( disekt(y1) == true && m1>2 ) { j = j -1;}
+if ( disekt(y1) == true && m1<2 && d1 < 29) { j = j + 1;}
 if ( (( m1 == 4 || m1 == 6 || m1 ==9 || m1 == 11 ) && (d1 < 31 && d1 >0)) && (( m2 == 4 || m2 == 6 || m2 ==9 || m2 == 11 ) && (d2 < 31 && d2 >0))){
     cout<<"\n";
 }
